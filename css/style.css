@@ -5,6 +5,12 @@
     position: relative;
 }
 
+@media(max-width: 860px) {
+    #levus-fadescroll {
+        width: 100%;
+    }
+}
+
 #levus-fadescroll div {
     position: absolute;
     top: 0;
@@ -12,8 +18,20 @@
     bottom: 0;
     right: 0;
     background-size: cover!important;
+    background-position: center center!important;
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
+}
+
+@media(max-width: 860px) {
+    #levus-fadescroll div {
+        background-size: contain!important;
+        background-repeat: no-repeat!important;
+    }
+}
+
+#levus-fadescroll div img {
+    max-width: 100%!important;
 }
 
 #levus-fadescroll #left,

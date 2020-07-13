@@ -20,3 +20,5 @@
         num < length ? num++ : num = 0;
     });
 }
+
+// todo: resize height and width
