@@ -44,6 +44,9 @@ function fadeScroll(element, width, height) {
             num < length ? num++ : num = 0;
         }
     });
+
+    // hide arrows
+    slides.length === 1 && (left.style.display = right.style.display = 'none');
 }
 
 // init
