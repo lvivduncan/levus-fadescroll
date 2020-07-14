@@ -29,4 +29,19 @@
     window.addEventListener('resize', () => {
         fadescroll.style.height = `${fadescroll.clientWidth * 3 / 4}px`;
     });
+
+    // arrow left and right
+    document.addEventListener('keydown', e => {
+        if (e.key === "ArrowLeft" || e.code === "ArrowLeft") {
+            slides.forEach(item => item.style.opacity = 0);
+            slides[num].style.opacity = 1;
+            num <= 0 ? num = length : num--;
+        }
+        if (e.key === "ArrowRight" || e.code === "ArrowRight") {
+            slides.forEach(item => item.style.opacity = 0);
+            slides[num].style.opacity = 1;
+            num < length ? num++ : num = 0;
+        }
+    });
+
 }
