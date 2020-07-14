@@ -46,4 +46,5 @@ function fadeScroll(element, width, height) {
     });
 }
 
+// init
 fadeScroll('#levus-fadescroll', 600, 800);

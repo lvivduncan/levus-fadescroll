@@ -1,14 +1,3 @@
-#example {
-    width: 800px;
-    height: 600px;
-}
-
-@media(max-width: 860px) {
-    #example {
-        width: 100%;
-    }
-}
-
 #levus-fadescroll {
     overflow: hidden;
     position: relative;
@@ -21,20 +10,8 @@
     bottom: 0;
     right: 0;
     background-size: cover!important;
-    background-position: center center!important;
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
-}
-
-@media(max-width: 860px) {
-    #levus-fadescroll div {
-        background-size: contain!important;
-        background-repeat: no-repeat!important;
-    }
-}
-
-#levus-fadescroll div img {
-    max-width: 100%!important;
 }
 
 #levus-fadescroll #left,
@@ -49,10 +26,8 @@
     height: 40px;
     background: white;
     border-radius: 40px;
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
-    -webkit-transform: translate(0);
-    transform: translate(0);
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 
 #levus-fadescroll #left {
