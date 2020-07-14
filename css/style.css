@@ -1,14 +1,11 @@
-#levus-fadescroll {
-    overflow: hidden;
+#example {
     width: 800px;
     height: 600px;
-    position: relative;
 }
 
-@media(max-width: 860px) {
-    #levus-fadescroll {
-        width: 100%;
-    }
+#levus-fadescroll {
+    overflow: hidden;
+    position: relative;
 }
 
 #levus-fadescroll div {

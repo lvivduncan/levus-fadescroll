@@ -20,6 +20,11 @@
         num < length ? num++ : num = 0;
     });
 
+    // on load
+    window.addEventListener('DOMContentLoaded', () => {
+        fadescroll.style.height = `${fadescroll.clientWidth * 3 / 4}px`;
+    });
+
     // resize scroll
     window.addEventListener('resize', () => {
         fadescroll.style.height = `${fadescroll.clientWidth * 3 / 4}px`;
