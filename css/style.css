@@ -3,6 +3,12 @@
     height: 600px;
 }
 
+@media(max-width: 860px) {
+    #example {
+        width: 100%;
+    }
+}
+
 #levus-fadescroll {
     overflow: hidden;
     position: relative;
